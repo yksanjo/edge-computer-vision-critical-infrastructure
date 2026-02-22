@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edge_computer_vision_critical_infrastructure"
+version = "0.1.0"
+description = "Detect physical anomalies and hazards via edge vision systems."
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
